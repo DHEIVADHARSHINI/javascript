@@ -1,12 +1,46 @@
 // Using variables to represent a book
 
-var bookTitle;
-var bookAuthor;
+var bookTitle1;
+var bookAuthor1;
 
-bookTitle = "The Hobbit";
-bookAuthor = "J. R. R. Tolkien";
+var bookTitle2;
+var bookAuthor2;
 
-console.log(bookTitle + " by " + bookAuthor);
+var bookTitle3;
+var bookAuthor3;
+
+bookTitle1 = "The Hobbit";
+bookAuthor1 = "J. R. R. Tolkien";
+ 
+bookTitle2 = " The Faith";
+bookAuthor2 = "A. Ziya ";
+
+bookTitle3 = "The Fall";
+bookAuthor3 = "Z. H. Zara";
+
+
+console.log(bookTitle1 + " by " + bookAuthor1);
+console.log(bookTitle2 + " by " + bookAuthor2);
+console.log(bookTitle3 + " by " + bookAuthor3);
+ 
+var book=[
+    { title : "Un Said Story" , author : "Guru"},
+    { title : "Un Story" , author : "Guru Swamy"},
+    { title : "Un Said " , author : "Anbu"},
+    { title : "It say's" , author : "Ann"},
+ { title : "Un Told story" , author : "Guna"},
+    { title : "Insights" , author : "Rin"},
+    { title : "Unforgetable" , author : "Obito"},
+    { title : "Unfortune" , author : "Cas"},
+    { title : "Paid" , author : "Manyu"},
+    { title : "Pain" , author : "Prakesh"}
+];
+
+for (let i = 0; i < book.length; i++) {
+    console.log(book[i].title + " by " +book[i].author);
+}
+
+
 
 
 

@@ -12,6 +12,16 @@ console.log(player1.name + " has scored " + player1.score);
 player1.score = player1.score + 50;
 
 console.log(player1.name + " has scored " + player1.score);
+player1.score = player1.score * 1.10;
+console.log(player1.name + "has scored" + "after a 10% increase");
+var player2;
+player2 = {
+	name:"rocky",
+	score:70
+};
+console.log(player2.name + "has scored"+player2.score);
+var totalscore = player1.score + player2.score;
+console.log(player1.name + "and" + player2.name + "have completed"+ totalscore);
 
 
 
