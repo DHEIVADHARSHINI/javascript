@@ -2,7 +2,7 @@
 
 var score;
 var price;
-var tax;
+var income;
 
 
 
