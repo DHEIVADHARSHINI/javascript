@@ -1,6 +1,6 @@
 // Using console.log to display information
 
-console.log("HAPPINESS")
+console.log("HAPPINESS!!");
 console.log("LIVE THE LIFE")
 
 
