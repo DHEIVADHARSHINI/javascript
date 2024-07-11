@@ -3,6 +3,7 @@
 var movie1;
 var movie2;
 var movie3;
+var movie4;
 
 movie1 = {
   title: "Inside Out",
@@ -22,6 +23,12 @@ movie3 = {
   directors: "J.J.Abrams"
 };
 
+movie4 = {
+  title: "Fantasy World",
+  actors : "kamal , John, Amy",
+  directors: "Leo"
+}
+
 console.log("Movie information for " + movie1.title);
 console.log("------------------------------");
 console.log("Actors: " + movie1.actors);
@@ -40,6 +47,51 @@ console.log("Actors: " + movie3.actors);
 console.log("Directors: " + movie3.directors);
 console.log("------------------------------");
 
+console.log("Movie information for " + movie4.title);
+console.log("------------------------------");
+console.log("Actors: " + movie4.actors);
+console.log("Directors: " + movie4.directors);
+console.log("------------------------------");
+
+var event1;
+var event2;
+var event3;
+
+event1 = {
+  location : "Coimabtore",
+  date : "09-11-2024",
+  time : "09:00 pm"
+}
+
+event2 = {
+  location : "Chennai",
+  date : "26-11-2024",
+  time : "09:30 pm"
+}
+
+event3 = {
+  location : "Madurai",
+  date : "21-12-2024",
+  time : "09:00 pm"
+}
+
+console.log("EVENT LOCATION " +event1.location);
+console.log("------------------------------");
+console.log("Date : " + event1.date);
+console.log("Time : " + event1.time);
+console.log("------------------------------");
+
+console.log("EVENT LOCATION " +event2.location);
+console.log("------------------------------");
+console.log("Date : " + event2.date);
+console.log("Time : " + event2.time);
+console.log("------------------------------");
+
+console.log("EVENT LOCATION " +event3.location);
+console.log("------------------------------");
+console.log("Date : " + event3.date);
+console.log("Time : " + event3.time);
+console.log("------------------------------");
 
 
 /* Further Adventures
