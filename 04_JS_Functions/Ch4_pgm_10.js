@@ -3,11 +3,18 @@
 var movie1;
 var showMovieInfo;
 var movie;
+var movie2
 
 movie1 = {
     title: "Inside Out",
     actors: "Amy Poehler, Bill Hader",
     directors: "Pete Doctor, Ronaldo Del Carmen"
+};
+
+movie2 = {
+  title: "The Fortune",
+  actors: "Amy Jackson, Bill Gates",
+  directors: "Peter, Carmen"
 };
 
 showMovieInfo = function () {
@@ -18,7 +25,7 @@ showMovieInfo = function () {
   console.log("------------------------------");
 };
 
-movie = movie1;
+movie = movie2;
 
 showMovieInfo();
 

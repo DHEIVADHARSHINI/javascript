@@ -41,6 +41,52 @@ showMovieInfo();
 movie = movie3;
 showMovieInfo();
 
+var question1;
+var question2;
+var question3;
+var question;
+var quizInfo;
+
+question1 = {
+    Question: 'What is the capital of France?',
+    Option: "A) Berlin , B) Madrid , C) Paris , D) Rome",
+    Answer: 'C) Paris'
+};
+
+question2 = {
+    Question: 'Which planet is known as the Red Planet?',
+    Option: "A) Venus , B) Mars , C) Earth , D) Jupiter ",
+    Answer: ' B) Mars '
+};
+
+question3 = {
+    Question: ' What is the chemical symbol for water? ',
+    Option: "A) CO2 , B) O2 , C) NaCl , D) H2O ",
+    Answer: ' D) H2O '
+};
+
+quizInfo = function () {
+    console.log("Question : " + question.Question);
+    console.log("Option : " + question.Option);
+    console.log("----------------------------------------------------------------");
+    console.log("----------------------------------------------------------------");
+    console.log("Answer : " + question.Answer);
+    console.log("----------------------------------------------------------------");
+};
+
+question = question1;
+quizInfo();
+
+question = question2;
+quizInfo();
+
+question = question3;
+quizInfo();
+
+
+
+
+
 
 
 /* Further Adventures
