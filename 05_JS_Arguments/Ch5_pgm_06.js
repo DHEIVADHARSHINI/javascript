@@ -9,7 +9,38 @@ showSum = function (number1, number2) {
 
 showSum(30, 23);
 showSum(2.8, -5);
+showSum(56,74);
 
+var showProduct = function (number1, number2) {
+	var product = number1 * number2;
+	console.log("The product is " + product);
+};
+
+showProduct(3, 5);
+showProduct(2.5, 4);
+showProduct(-3, 6);
+
+var showDifference = function (number1, number2) {
+	var difference = number1 - number2;
+	console.log("The difference is " + difference);
+};
+
+showDifference(10, 4);
+showDifference(7.5, 2.5);
+showDifference(-2, 5);
+
+var showQuotient = function (number1, number2) {
+	if (number2 !== 0) {
+		var quotient = number1 / number2;
+		console.log("The quotient is " + quotient);
+	} else {
+		console.log("Division by zero is not allowed");
+	}
+};
+
+showQuotient(10, 2);
+showQuotient(7.5, 2.5);
+showQuotient(5, 0);  
 
 
 /* Further Adventures

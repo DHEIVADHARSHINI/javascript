@@ -1,9 +1,10 @@
 // Displaying a player's health
 
 var showPlayerHealth;
-
+var healthInfo;
 showPlayerHealth = function (playerName, playerHealth) {
-    console.log(playerName + " has health " + playerHealth);
+    healthInfo= playerName + "  health is " + playerHealth + " % ";
+    console.log(healthInfo);
 };
 
 showPlayerHealth("Kandra", 50);

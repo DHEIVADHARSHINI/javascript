@@ -3,12 +3,17 @@
 var showMessage;
 
 showMessage = function (message) {
-	console.log("The message is: " + message);
+	console.log("My Message is : " + message);
 };
 
-showMessage("It's full of stars!");
+showMessage("Insight Fear!");
+showMessage("The Fortune!!");
+showMessage("Beautiful Day!!!");
 
-
+showMessage = function (message) {
+	console.log("Message received : " + message);
+};
+showMessage("new message");
 
 /* Further Adventures
  *
