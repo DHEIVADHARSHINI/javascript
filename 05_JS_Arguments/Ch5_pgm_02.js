@@ -1,12 +1,15 @@
 // Breaking a function by changing a variable name
 
 var msg;
+var newmsg;
 var showMessage;
 
 msg = "It's full of stars!";
+newmsg = "The Fortune!";
 
 showMessage = function () {
-	console.log(message);
+	console.log(msg);
+	console.log(newmsg);
 };
 
 showMessage();
