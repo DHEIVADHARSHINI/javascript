@@ -14,6 +14,15 @@ getPlayerPlace = function (playerName, playerPlace) {
 console.log(getPlayerHealth("Kandra", 50));
 console.log(getPlayerPlace("Kandra", "The Dungeon of Doom"));
 
+var showPlayerInfo = function (playerName, playerHealth, playerPlace) {
+    var healthInfo = getPlayerHealth(playerName, playerHealth);
+    var placeInfo = getPlayerPlace(playerName, playerPlace);
+    
+    console.log(healthInfo);
+    console.log(placeInfo);
+};
+
+showPlayerInfo("Dev", 50, "The Sun Shine");
 
 
 /* Further Adventures

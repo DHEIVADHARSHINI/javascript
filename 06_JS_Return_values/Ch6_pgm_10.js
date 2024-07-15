@@ -16,6 +16,14 @@ var getBorder = function () {
     return "================================";
 };
 
+var getPlayerItems = function (items) {
+    if (items && items.length > 0) {
+        return "Items: " + items.join(", ");
+    } else {
+        return "Items: None";
+    }
+};
+
 var getPlayerInfo = function (playerName, playerPlace, playerHealth) {
     var playerInfo;
 
@@ -32,18 +40,28 @@ var getPlayerInfo = function (playerName, playerPlace, playerHealth) {
 var player1 = {
     name: "Kandra",
     place: "The Dungeon of Doom",
-    health: 50
+    health: 50,
+    items:  ["a rusty key", "a piece of cheese"]
 };
 
 var player2 = {
     name: "Dax",
     place: "The Old Library",
-    health: 40
+    health: 40,
+    items: ["a lantern", "a torn map"]
 };
 
-console.log(getPlayerInfo(player1.name, player1.place, player1.health));
-console.log(getPlayerInfo(player2.name, player2.place, player2.health));
+console.log(getPlayerInfo(player1.name, player1.place, player1.health, player1.items));
+console.log(getPlayerInfo(player2.name, player2.place, player2.health, player2.items));
 
+var player3 = {
+    name: "Jahver",
+    place: "The Tower of Sorcery",
+    health: 60,
+    items: ["a magic staff", "spell scrolls"]
+};
+
+console.log(getPlayerInfo(player3.name, player3.place, player3.health, player3.items));
 
 
 /* Further Adventures

@@ -3,11 +3,25 @@
 var getPlayerName;
 
 getPlayerName = function (playerName) {
-    return playerName;
+    return "==== " + playerName + " ====";
 };
+
 
 console.log(getPlayerName("Kandra"));
 
+var getPlayerNameWithBorder = function (playerName) {
+    return "|\n| " + playerName + "\n|";
+};
+
+console.log(getPlayerNameWithBorder("Joe"));
+
+var getPlayerNameWithPrefixSuffixAndBorder = function (playerName) {
+    var nameWithPrefixSuffix = "==== " + playerName + " ====";
+    return "|\n| " + nameWithPrefixSuffix + "\n|";
+};
+
+console.log(getPlayerNameWithPrefixSuffixAndBorder("Kiki")); 
+console.log(getPlayerNameWithPrefixSuffixAndBorder("Mahesha"));
 
 
 /* Further Adventures

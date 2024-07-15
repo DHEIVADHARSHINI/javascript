@@ -20,8 +20,12 @@ sum = function (number1, number2) {
 totalCost = function (callOutCharge, costPerHour, numberOfHours) {
     return callOutCharge + costPerHour * numberOfHours;
 };
-
-
+console.log(getMessage());
+console.log(getHelloTo("Dax"));
+console.log(sum(5, 10));
+console.log(sum(20, 30));
+console.log(totalCost(50, 20, 5));
+console.log(totalCost(100, 40, 10));
 
 /* Further Adventures
  *

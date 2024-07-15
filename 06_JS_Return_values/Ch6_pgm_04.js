@@ -1,16 +1,26 @@
 // Returning the sum of two numbers
 
-var add;
-
-add = function (number1, number2) {
+var add = function (number1, number2) {
 	var total = number1 + number2;
-
 	return total;
 };
 
-var sum = add(50, 23);
+var sum = add(21, 9);
+console.log('The Sum of 21 and 09 is ' + sum);
 
-console.log(sum);
+var newSum = add(15, 30);
+console.log(newSum);  
+
+var sum3 = add(add(10, 20), 30);
+console.log(sum3);
+
+var addThreeNumbers = function (number1, number2, number3) {
+    var total = number1 + number2 + number3;
+    return total;
+};
+
+var sumOfThree = add(add(10, 20), 30);
+console.log(sumOfThree);  
 
 
 
