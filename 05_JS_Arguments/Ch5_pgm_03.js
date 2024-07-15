@@ -6,16 +6,14 @@ showMessage = function (message) {
 	console.log("My Message is : " + message);
 };
 
-showMessage("Live The Life!!!");
+showMessage("Insight Fear!");
 showMessage("The Fortune!!");
-showMessage("Beautiful Day!");
+showMessage("Beautiful Day!!!");
 
 showMessage = function (message) {
-	console.log("Message received : " + message + " - Have A Nice Day");
+	console.log("Message received : " + message);
 };
 showMessage("new message");
-showMessage("Moving forward!");
-showMessage("Successful Life!");
 
 /* Further Adventures
  *

@@ -2,19 +2,14 @@
 
 var msg;
 var newmsg;
-var message;
 var showMessage;
 
 msg = "It's full of stars!";
 newmsg = "The Fortune!";
-message = "Live the Life";
-var addmsg = "Happy Morning!!!";
 
 showMessage = function () {
 	console.log(msg);
 	console.log(newmsg);
-	console.log(message);
-	console.log(addmsg)
 };
 
 showMessage();

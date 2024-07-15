@@ -1,12 +1,12 @@
 // Relying on a variable outside of the function
 
-var message;
+var msg;
 var showMessage;
 
-message = "THE DELIGHT !!!";
+msg = "THE FORTUNE !!!";
 
 showMessage = function () {
-	console.log(message);
+	console.log(msg);
 };
 
 showMessage();
