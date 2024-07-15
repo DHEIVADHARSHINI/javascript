@@ -4,6 +4,7 @@ var showPlayerInfo;
 var showPlayerName;
 var showPlayerHealth;
 var showPlayerPlace;
+var showLine;
 
 showPlayerName = function (playerName) {
     console.log(playerName);
@@ -18,17 +19,19 @@ showPlayerPlace = function (playerName, playerPlace) {
 };
 
 showPlayerInfo = function (playerName, playerPlace, playerHealth) {
-    console.log("");
-
+    showLine();
     showPlayerName(playerName);
 
-    console.log("----------------------------");
+    showLine();
 
     showPlayerPlace(playerName, playerPlace);
     showPlayerHealth(playerName, playerHealth);
 
+    showLine();
+    showLine();
+};
+showLine = function () {
     console.log("----------------------------");
-    console.log("");
 };
 
 showPlayerInfo("Kandra", "The Dungeon of Doom", 50);

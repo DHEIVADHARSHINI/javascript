@@ -1,8 +1,19 @@
 // Displaying a player's information using properties
 
-var showPlayerName = function (playerName) {
-    console.log(playerName);
+var showLine = function(length) {
+    var line = "********************"; 
+    console.log(line.substring(0, length));
 };
+
+var showPlayerName = function (playerName) {
+    var nameLength = playerName.length;
+    var boxLength = nameLength + 4; 
+
+    showLine(boxLength);
+    console.log("* " + playerName + " *");
+    showLine(boxLength);
+};
+
 
 var showPlayerHealth = function (playerName, playerHealth) {
     console.log(playerName + " has health " + playerHealth);
@@ -26,6 +37,7 @@ var showPlayerInfo = function (playerName, playerPlace, playerHealth) {
     console.log("");
 };
 
+
 var player1 = {
     name: "Kandra",
     place: "The Dungeon of Doom",
@@ -41,7 +53,8 @@ var player2 = {
 showPlayerInfo(player1.name, player1.place, player1.health);
 showPlayerInfo(player2.name, player2.place, player2.health);
 
-
+showLine(15);  
+showLine(20); 
 
 
 /* Further Adventures
