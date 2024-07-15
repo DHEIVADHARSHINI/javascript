@@ -9,6 +9,15 @@ names = [ "Kandra", "Dax", "Blinky" ];
 console.log(scores);
 console.log(names);
 
+scores.push(5);
+names.push("Joe");
+
+console.log("Updated scores:", scores);
+console.log("Updated names:", names);
+
+var akaScores;
+akaScores = scores;
+console.log("akaScores:", akaScores);
 
 
 /* Further Adventures

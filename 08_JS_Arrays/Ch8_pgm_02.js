@@ -7,8 +7,13 @@ var place3 = { name : "Bondi Beach", country : "Australia" };
 var thisYear = [ place1, place2 ];
 var nextYear = [ place3 ];
 
-console.log(thisYear);
-console.log(nextYear);
+console.log("This year : ", thisYear);
+console.log("Next year : ", nextYear);
+
+nextYear.push(place1);
+
+console.log("Updated next year:", nextYear);
+console.log("This year still:", thisYear);
 
 
 
