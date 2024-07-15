@@ -5,6 +5,22 @@ var bigPlanet = planet.toUpperCase();
 
 console.log(planet + " becomes " + bigPlanet);
 
+var getBig = function (str) {
+    return str.toUpperCase();
+};
+
+var getSmall = function (str) {
+    return str.toLowerCase();
+};
+
+
+console.log(getBig("Mercury")); 
+console.log(getBig("Venus")); 
+
+
+console.log(getSmall("Earth"));
+console.log(getSmall("MARS")); 
+
 
 
 /* Further Adventures

@@ -6,10 +6,45 @@ var line = function (lineLength) {
     lineLength = Math.min(40, lineLength);
     return line.substr(0, lineLength);
   };
-  
-  console.log(line(30));
-  console.log(line(40));
-  console.log(line(50));
+
+  for (var i = -20; i <= 60; i += 10) {
+    console.log("Line length " + i + ": " + line(i));
+}
+
+var spaces = function (spaceLength) {
+  var space = "                                        "; // 40 spaces
+  spaceLength = Math.max(0, spaceLength);
+  spaceLength = Math.min(40, spaceLength);
+  return space.substr(0, spaceLength);
+};
+
+var emptyBox = function (width) {
+  width = Math.max(2, width); // Ensure the width is at least 2
+  width = Math.min(40, width); // Ensure the width is at most 40
+
+  var horizontalLine = line(width);
+  var spaceLine = "=" + spaces(width - 2) + "=";
+
+  console.log(horizontalLine);
+  for (var i = 0; i < 3; i++) {
+      console.log(spaceLine);
+  }
+  console.log(horizontalLine);
+};
+
+console.log("Spaces length 10: '" + spaces(10) + "'");
+console.log("Spaces length 20: '" + spaces(20) + "'");
+console.log("Spaces length 40: '" + spaces(40) + "'");
+
+
+console.log("Empty box with width 12:");
+emptyBox(12);
+
+console.log("Empty box with width 5:");
+emptyBox(5);
+
+console.log("Empty box with width 40:");
+emptyBox(40);
   
   
   
