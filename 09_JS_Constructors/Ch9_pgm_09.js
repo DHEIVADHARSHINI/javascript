@@ -177,6 +177,21 @@ var spacer = {
   player1.addItem("The Sword of Doom");
   
   player1.showInfo("=");
+
+  var player1 = new Player("Kandra", 50);
+player1.place = library;
+player1.addItem("a rusty key");
+player1.addItem("The Sword of Doom");
+
+// Create a second player and add items
+var player2 = new Player("Jareth", 70);
+player2.place = library;
+player2.addItem("a shiny coin");
+player2.addItem("a mysterious map");
+
+// Display each player's info
+player1.showInfo("=");
+player2.showInfo("=");
   
   
   

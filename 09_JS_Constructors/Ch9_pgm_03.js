@@ -1,5 +1,3 @@
-// An array of constructed objects
-
 var buildPlanet = function (name, position, type) {
     var planet = {};
   
@@ -12,20 +10,24 @@ var buildPlanet = function (name, position, type) {
         info += ": planet " + planet.position;
         info += " - " + planet.type;
         console.log(info);
-      };
+        console.log("---------------------"); // Separator line
+    };
 
     return planet;
 };
 
 var planets = [
-    buildPlanet( "Jupiter", 5, "Gas Giant" ),
-    buildPlanet( "Neptune", 8, "Ice Giant" ),
-    buildPlanet( "Mercury", 1, "Terrestrial" )
+    buildPlanet("Jupiter", 5, "Gas Giant"),
+    buildPlanet("Neptune", 8, "Ice Giant"),
+    buildPlanet("Mercury", 1, "Terrestrial"),
+    buildPlanet("Saturn", 6, "Gas Giant"),    // New planet added
+    buildPlanet("Venus", 2, "Terrestrial")    // New planet added
 ];
 
 planets.forEach(function (planet) {
     planet.showPlanet();
 });
+
 
 
 

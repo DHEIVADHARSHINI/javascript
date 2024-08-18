@@ -20,6 +20,18 @@ console.log(planet1.name);
 console.log(planet1.position);
 console.log(planet1.type);
 
+// Build a second planet using the buildPlanet function
+var planet2 = buildPlanet(
+    "Earth",
+    3,
+    "Terrestrial"
+);
+
+// Log its name and type
+console.log(planet2.name); // Outputs: Earth
+console.log(planet2.type); // Outputs: Terrestrial
+
+
 
 
 /* Further Adventures

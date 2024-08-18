@@ -15,6 +15,9 @@ var Planet = function (name, position, type) {
 var planet = new Planet( "Jupiter", 5, "Gas Giant" );
 
 planet.showPlanet();
+var planet2 = new Planet("Mars", 4, "Terrestrial");
+
+planet2.showPlanet();
 
 
 
