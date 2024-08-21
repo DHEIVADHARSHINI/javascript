@@ -15,6 +15,8 @@ var getGuesser = function () {
   };
   
   var guess = getGuesser();
+  var guess = getGuesser(50, 10); 
+
   
   
   

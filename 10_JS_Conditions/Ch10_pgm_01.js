@@ -4,11 +4,12 @@ var secret = 8;
 
 var guess = function (userNumber) {
   if (userNumber === secret) {
-    console.log("Well done!");
+    console.log("Too High!");
   }
 };
 
-
+guess(10); 
+guess(5);
 
 /* Further Adventures
  *

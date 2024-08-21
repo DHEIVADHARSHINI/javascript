@@ -1,18 +1,27 @@
 // Guess the random number
 
 var getGuesser = function () {
-    var secret = Math.floor(Math.random() * 10 + 1);
-  
-    return function (userNumber) {
-      if (userNumber === secret) {
-        return "Well done!";
-      } else {
-        return "Unlucky, try again.";
-      }
-    };
+  var secret = Math.floor(Math.random() * (50 - 30 + 1) + 30);
+
+  return function (userNumber) {
+    if (userNumber === secret) {
+      return "Well done!";
+    } else {
+      return "Unlucky, try again.";
+    }
   };
-  
-  var guess = getGuesser();
+};
+
+var guess = getGuesser();
+
+var between = function (min, max) {
+  return Math.floor(Math.random() * (max - min + 1) + min);
+};
+
+// Examples
+console.log(between(1, 5));    // e.g., 3
+console.log(between(100, 200)); // e.g., 145
+
   
   
   

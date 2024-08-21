@@ -6,10 +6,11 @@ var guess = function (userNumber) {
   if (userNumber === secret) {
     console.log("Well done!");
   } else {
-    console.log("Unlucky, try again.");
+    console.log("Incorrect Guess, try again.");
   }
 };
-
+guess(5); 
+guess(8);
 
 
 /* Further Adventures
