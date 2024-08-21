@@ -3,15 +3,19 @@
 var players;
 var showArguments;
 
-players = [ "Dax", "Jahver", "Kandra" ];
+players = ["Dax", "Jahver", "Kandra"];
 
 showArguments = function (item, index, wholeArray) {
-  console.log("Item: " + item);
+  console.log("Item: " + wholeArray[index]); // Using wholeArray and index instead of item
   console.log("Index: " + index);
   console.log("Array: " + wholeArray);
 };
 
+players.push("Alexis");
+players.push("Leif");
+
 players.forEach(showArguments);
+
 
 
 /* Further Adventures

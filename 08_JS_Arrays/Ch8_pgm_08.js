@@ -1,13 +1,17 @@
 // Calling forEach with an inline function
 
-var items = [ "The Pyramids", "The Grand Canyon", "Bondi Beach" ];
+var items = ["The Pyramids", "The Grand Canyon", "Bondi Beach"];
 
 console.log("Dream destinations:");
 
-items.forEach(function (item) {
-	console.log(" – " + item);
-});
+var showItems = function () {
+    console.log("You have " + items.length + " places to visit:");
+    items.forEach(function (item) {
+        console.log(" – " + item);
+    });
+};
 
+showItems();
 
 
 /* Further Adventures

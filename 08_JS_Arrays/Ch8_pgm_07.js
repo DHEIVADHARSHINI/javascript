@@ -10,10 +10,25 @@ items = [
 ];
 
 showInfo = function (itemToShow) {
-    console.log(itemToShow);
+    console.log(itemToShow + " has " + itemToShow.length + " letters");
 };
 
+items.push("Mount Everest");
+items.push("Niagara Falls");
+items[5] = "Great Wall of China";
+
 items.forEach(showInfo);
+
+var totalLetters = function (arr) {
+    var total = 0;
+    arr.forEach(function (item) {
+        total += item.length;
+    });
+    return total;
+};
+
+console.log("Total number of letters: " + totalLetters(items));
+
 
 
 
